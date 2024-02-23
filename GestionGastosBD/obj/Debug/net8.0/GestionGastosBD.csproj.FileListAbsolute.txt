@@ -1,0 +1,14 @@
+C:\Users\victo\Repository\GestionGastosBack\GestionGastosBD\bin\Debug\net8.0\GestionGastosBD.deps.json
+C:\Users\victo\Repository\GestionGastosBack\GestionGastosBD\bin\Debug\net8.0\GestionGastosBD.dll
+C:\Users\victo\Repository\GestionGastosBack\GestionGastosBD\bin\Debug\net8.0\GestionGastosBD.pdb
+C:\Users\victo\Repository\GestionGastosBack\GestionGastosBD\obj\Debug\net8.0\GestionGastosBD.csproj.AssemblyReference.cache
+C:\Users\victo\Repository\GestionGastosBack\GestionGastosBD\obj\Debug\net8.0\GestionGastosBD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\victo\Repository\GestionGastosBack\GestionGastosBD\obj\Debug\net8.0\GestionGastosBD.AssemblyInfoInputs.cache
+C:\Users\victo\Repository\GestionGastosBack\GestionGastosBD\obj\Debug\net8.0\GestionGastosBD.AssemblyInfo.cs
+C:\Users\victo\Repository\GestionGastosBack\GestionGastosBD\obj\Debug\net8.0\GestionGastosBD.csproj.CoreCompileInputs.cache
+C:\Users\victo\Repository\GestionGastosBack\GestionGastosBD\obj\Debug\net8.0\GestionGastosBD.dll
+C:\Users\victo\Repository\GestionGastosBack\GestionGastosBD\obj\Debug\net8.0\refint\GestionGastosBD.dll
+C:\Users\victo\Repository\GestionGastosBack\GestionGastosBD\obj\Debug\net8.0\GestionGastosBD.pdb
+C:\Users\victo\Repository\GestionGastosBack\GestionGastosBD\obj\Debug\net8.0\ref\GestionGastosBD.dll
+C:\Users\victo\Repository\GestionGastosBack\GestionGastosBD\bin\Debug\net8.0\GestionGastosBD.runtimeconfig.json
+C:\Users\victo\Repository\GestionGastosBack\GestionGastosBD\obj\Debug\net8.0\GestionGastosBD.genruntimeconfig.cache
