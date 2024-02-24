@@ -1,5 +1,45 @@
 [
   {
+    "ContainingType": "GestionGastosBack.Controllers.ExpensesController",
+    "Method": "InsertExpense",
+    "RelativePath": "api/Expenses/InsertExpense",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GestionGastosBack.Controllers.ExpensesController",
+    "Method": "UpdateExpense",
+    "RelativePath": "api/Expenses/UpdateExpense",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "GestionGastosBack.Controllers.LogInController",
     "Method": "LogIn",
     "RelativePath": "api/LogIn/LogIn",

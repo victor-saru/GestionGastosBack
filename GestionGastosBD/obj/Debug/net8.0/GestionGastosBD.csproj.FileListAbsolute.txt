@@ -12,3 +12,4 @@ C:\Users\victo\Repository\GestionGastosBack\GestionGastosBD\obj\Debug\net8.0\Ges
 C:\Users\victo\Repository\GestionGastosBack\GestionGastosBD\obj\Debug\net8.0\ref\GestionGastosBD.dll
 C:\Users\victo\Repository\GestionGastosBack\GestionGastosBD\bin\Debug\net8.0\GestionGastosBD.runtimeconfig.json
 C:\Users\victo\Repository\GestionGastosBack\GestionGastosBD\obj\Debug\net8.0\GestionGastosBD.genruntimeconfig.cache
+C:\Users\victo\Repository\GestionGastosBack\GestionGastosBD\obj\Debug\net8.0\GestionGastosBD.sourcelink.json

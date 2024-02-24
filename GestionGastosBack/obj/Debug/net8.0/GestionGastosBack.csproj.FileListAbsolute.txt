@@ -138,3 +138,4 @@ C:\Users\victo\Repository\GestionGastosBack\GestionGastosBack\obj\Debug\net8.0\G
 C:\Users\victo\Repository\GestionGastosBack\GestionGastosBack\obj\Debug\net8.0\GestionGastosBack.genruntimeconfig.cache
 C:\Users\victo\Repository\GestionGastosBack\GestionGastosBack\obj\Debug\net8.0\ref\GestionGastosBack.dll
 C:\Users\victo\Repository\GestionGastosBack\GestionGastosBack\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\victo\Repository\GestionGastosBack\GestionGastosBack\obj\Debug\net8.0\GestionGastosBack.sourcelink.json

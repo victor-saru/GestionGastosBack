@@ -1,6 +1,6 @@
+using GestionGastosBack;
 using GestionGastosBD;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualBasic;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,12 +28,18 @@ builder.Services.AddCors(options =>
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
+GlobalFunctions globalFunctions;
 
 using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<GestionGastosBDContext>();
 
     context.Database.Migrate();
+
+    globalFunctions = new GlobalFunctions(context);
+
+    globalFunctions.InsertItems(pm => pm.name, Constants.paymentMethods.ToList());
+    
 }
 
 // Configure the HTTP request pipeline.
