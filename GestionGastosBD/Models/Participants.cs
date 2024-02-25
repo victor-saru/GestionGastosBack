@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GestionGastosBD.Models
 {
-    internal class Participants
+    public class Participants
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -22,5 +22,11 @@ namespace GestionGastosBD.Models
 
         [Required]
         public int paymanets { get; set; }
+
+        [Required]
+        public int id_user { get; set; }
+
+        [ForeignKey("id_user")]
+        public virtual Users Users { get; set; }
     }
 }

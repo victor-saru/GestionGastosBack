@@ -1,4 +1,5 @@
 ﻿using GestionGastosBD;
+using GestionGastosBD.Models;
 
 namespace GestionGastosBack
 {
@@ -41,6 +42,14 @@ namespace GestionGastosBack
             {
                 throw;
             }
+        }
+
+        public decimal CalculateTotalExpenses(List<Expenses> expensesList)
+        {
+            return expensesList.Where(item => item.final_payment == null || item.final_payment > DateTime.Now).Sum(item =>
+            {
+                return item.cost * Constants.paymentMethods.SingleOrDefault(x => x.name == item.id_periodicity).periodicity;
+            });
         }
     }
 }

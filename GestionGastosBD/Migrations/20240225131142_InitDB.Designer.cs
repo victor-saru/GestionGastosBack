@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GestionGastosBD.Migrations
 {
     [DbContext(typeof(GestionGastosBDContext))]
-    [Migration("20240224115109_InitDB")]
+    [Migration("20240225131142_InitDB")]
     partial class InitDB
     {
         /// <inheritdoc />
@@ -34,7 +34,8 @@ namespace GestionGastosBD.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
 
                     b.Property<decimal>("cost")
-                        .HasColumnType("decimal(18,2)");
+                        .HasPrecision(10, 2)
+                        .HasColumnType("decimal(10,2)");
 
                     b.Property<DateTime?>("final_payment")
                         .HasColumnType("datetime2");
@@ -60,6 +61,35 @@ namespace GestionGastosBD.Migrations
                     b.HasIndex("id_user");
 
                     b.ToTable("expenses", (string)null);
+                });
+
+            modelBuilder.Entity("GestionGastosBD.Models.Participants", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<int>("id_user")
+                        .HasColumnType("int");
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("net_monthly_salary")
+                        .HasPrecision(10, 2)
+                        .HasColumnType("decimal(10,2)");
+
+                    b.Property<int>("paymanets")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("id_user");
+
+                    b.ToTable("participants", (string)null);
                 });
 
             modelBuilder.Entity("GestionGastosBD.Models.PaymentMethods", b =>
@@ -114,6 +144,17 @@ namespace GestionGastosBD.Migrations
                         .IsRequired();
 
                     b.Navigation("PaymentMethods");
+
+                    b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("GestionGastosBD.Models.Participants", b =>
+                {
+                    b.HasOne("GestionGastosBD.Models.Users", "Users")
+                        .WithMany()
+                        .HasForeignKey("id_user")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Users");
                 });
