@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBack\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7BC94691-BE34-4FE8-8360-4EB5B382D61A}|..\\GestionGastosBD\\GestionGastosBD.csproj|c:\\users\\victo\\repository\\gestiongastosback\\gestiongastosbd\\dtos\\calculationsresultsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F045BF40-A0A0-4368-B568-6E08CB017E70}|GestionGastosBack.csproj|c:\\users\\victo\\repository\\gestiongastosback\\gestiongastosback\\controllers\\calculationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F045BF40-A0A0-4368-B568-6E08CB017E70}|GestionGastosBack.csproj|solutionrelative:controllers\\calculationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BC94691-BE34-4FE8-8360-4EB5B382D61A}|..\\GestionGastosBD\\GestionGastosBD.csproj|c:\\users\\victo\\repository\\gestiongastosback\\gestiongastosbd\\dtos\\calculationsresultsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F045BF40-A0A0-4368-B568-6E08CB017E70}|GestionGastosBack.csproj|c:\\users\\victo\\repository\\gestiongastosback\\gestiongastosback\\globalfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F045BF40-A0A0-4368-B568-6E08CB017E70}|GestionGastosBack.csproj|solutionrelative:globalfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F045BF40-A0A0-4368-B568-6E08CB017E70}|GestionGastosBack.csproj|c:\\users\\victo\\repository\\gestiongastosback\\gestiongastosback\\controllers\\expensescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F045BF40-A0A0-4368-B568-6E08CB017E70}|GestionGastosBack.csproj|solutionrelative:controllers\\expensescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F045BF40-A0A0-4368-B568-6E08CB017E70}|GestionGastosBack.csproj|c:\\users\\victo\\repository\\gestiongastosback\\gestiongastosback\\globalfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F045BF40-A0A0-4368-B568-6E08CB017E70}|GestionGastosBack.csproj|solutionrelative:globalfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F045BF40-A0A0-4368-B568-6E08CB017E70}|GestionGastosBack.csproj|c:\\users\\victo\\repository\\gestiongastosback\\gestiongastosback\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,13 +29,7 @@
       "RelativeMoniker": "D:0:0:{F045BF40-A0A0-4368-B568-6E08CB017E70}|GestionGastosBack.csproj|solutionrelative:controllers\\participantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BC94691-BE34-4FE8-8360-4EB5B382D61A}|..\\GestionGastosBD\\GestionGastosBD.csproj|c:\\users\\victo\\repository\\gestiongastosback\\gestiongastosbd\\models\\participants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7BC94691-BE34-4FE8-8360-4EB5B382D61A}|..\\GestionGastosBD\\GestionGastosBD.csproj|c:\\users\\victo\\repository\\gestiongastosback\\gestiongastosbd\\gestiongastosbdcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBD\\Migrations\\20240225131142_InitDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F045BF40-A0A0-4368-B568-6E08CB017E70}|GestionGastosBack.csproj|c:\\users\\victo\\repository\\gestiongastosback\\gestiongastosback\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,6 +41,9 @@
     {
       "AbsoluteMoniker": "D:0:0:{F045BF40-A0A0-4368-B568-6E08CB017E70}|GestionGastosBack.csproj|c:\\users\\victo\\repository\\gestiongastosback\\gestiongastosback\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F045BF40-A0A0-4368-B568-6E08CB017E70}|GestionGastosBack.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BC94691-BE34-4FE8-8360-4EB5B382D61A}|..\\GestionGastosBD\\GestionGastosBD.csproj|c:\\users\\victo\\repository\\gestiongastosback\\gestiongastosbd\\migrations\\20240225131142_initdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,7 +53,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 206,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -66,40 +63,39 @@
               "RelativeDocumentMoniker": "Constants.cs",
               "ToolTip": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBack\\Constants.cs",
               "RelativeToolTip": "Constants.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-25T14:02:07.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-25T14:02:07.382Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GlobalFunctions.cs",
-              "DocumentMoniker": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBack\\GlobalFunctions.cs",
-              "RelativeDocumentMoniker": "GlobalFunctions.cs",
-              "ToolTip": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBack\\GlobalFunctions.cs",
-              "RelativeToolTip": "GlobalFunctions.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAswDEAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-25T14:00:16.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CalculationsController.cs",
               "DocumentMoniker": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBack\\Controllers\\CalculationsController.cs",
               "RelativeDocumentMoniker": "Controllers\\CalculationsController.cs",
               "ToolTip": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBack\\Controllers\\CalculationsController.cs",
               "RelativeToolTip": "Controllers\\CalculationsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAAAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAlwCQAAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-25T13:29:27.667Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
+              "Title": "GlobalFunctions.cs",
+              "DocumentMoniker": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBack\\GlobalFunctions.cs",
+              "RelativeDocumentMoniker": "GlobalFunctions.cs",
+              "ToolTip": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBack\\GlobalFunctions.cs",
+              "RelativeToolTip": "GlobalFunctions.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAMwFcAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-25T14:00:16.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "20240225131142_InitDB.cs",
               "DocumentMoniker": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBD\\Migrations\\20240225131142_InitDB.cs",
               "RelativeDocumentMoniker": "..\\GestionGastosBD\\Migrations\\20240225131142_InitDB.cs",
@@ -107,12 +103,11 @@
               "RelativeToolTip": "..\\GestionGastosBD\\Migrations\\20240225131142_InitDB.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-25T13:11:42.119Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-25T13:11:42.119Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "GestionGastosBDContext.cs",
               "DocumentMoniker": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBD\\GestionGastosBDContext.cs",
               "RelativeDocumentMoniker": "..\\GestionGastosBD\\GestionGastosBDContext.cs",
@@ -120,8 +115,7 @@
               "RelativeToolTip": "..\\GestionGastosBD\\GestionGastosBDContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-25T13:03:52.115Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-25T13:03:52.115Z"
             },
             {
               "$type": "Document",
@@ -133,12 +127,11 @@
               "RelativeToolTip": "Controllers\\ParticipantsController.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAA9wDoAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-25T12:38:04.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-25T12:38:04.099Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "LogInController.cs",
               "DocumentMoniker": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBack\\Controllers\\LogInController.cs",
               "RelativeDocumentMoniker": "Controllers\\LogInController.cs",
@@ -146,18 +139,17 @@
               "RelativeToolTip": "Controllers\\LogInController.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAAwC0AAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-23T15:55:16.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-23T15:55:16.716Z"
             }
           ]
         },
         {
           "DockedWidth": 194,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ExpensesController.cs",
               "DocumentMoniker": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBack\\Controllers\\ExpensesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ExpensesController.cs",
@@ -170,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "PaymentMethods.cs",
               "DocumentMoniker": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBD\\Models\\PaymentMethods.cs",
               "RelativeDocumentMoniker": "..\\GestionGastosBD\\Models\\PaymentMethods.cs",
@@ -178,8 +170,7 @@
               "RelativeToolTip": "..\\GestionGastosBD\\Models\\PaymentMethods.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-24T10:43:01.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-24T10:43:01.835Z"
             },
             {
               "$type": "Document",
@@ -191,12 +182,11 @@
               "RelativeToolTip": "..\\GestionGastosBD\\Models\\Expenses.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-24T10:31:24.998Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-24T10:31:24.998Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBack\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
@@ -209,26 +199,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Participants.cs",
-              "DocumentMoniker": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBD\\Models\\Participants.cs",
-              "RelativeDocumentMoniker": "..\\GestionGastosBD\\Models\\Participants.cs",
-              "ToolTip": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBD\\Models\\Participants.cs",
-              "RelativeToolTip": "..\\GestionGastosBD\\Models\\Participants.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-24T12:00:39.37Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CalculationsResultsDTO.cs",
               "DocumentMoniker": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBD\\DTOs\\CalculationsResultsDTO.cs",
               "RelativeDocumentMoniker": "..\\GestionGastosBD\\DTOs\\CalculationsResultsDTO.cs",
               "ToolTip": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBD\\DTOs\\CalculationsResultsDTO.cs",
               "RelativeToolTip": "..\\GestionGastosBD\\DTOs\\CalculationsResultsDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-25T13:36:03.412Z",
               "EditorCaption": ""

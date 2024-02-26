@@ -1,4 +1,5 @@
 ﻿using GestionGastosBD;
+using GestionGastosBD.DTOs;
 using GestionGastosBD.Models;
 
 namespace GestionGastosBack
@@ -44,12 +45,157 @@ namespace GestionGastosBack
             }
         }
 
-        public decimal CalculateTotalExpenses(List<Expenses> expensesList)
+        public decimal CalculateTotalAnnualExpenses(List<Expenses> expensesList)
         {
             return expensesList.Where(item => item.final_payment == null || item.final_payment > DateTime.Now).Sum(item =>
             {
                 return item.cost * Constants.paymentMethods.SingleOrDefault(x => x.name == item.id_periodicity).periodicity;
             });
+        }
+
+        public decimal CalculateTotalAnnualIncome(List<Participants> participantsList)
+        {
+            return participantsList.Sum(item =>
+            {
+                return item.net_monthly_salary * item.paymanets;
+            });
+        }
+
+        public decimal CalculateTotalMonthlyIncome(List<Participants> participantsList)
+        {
+            return participantsList.Sum(item =>
+            {
+                return item.net_monthly_salary;
+            });
+        }
+
+        internal List<ResultsDTO> CalculateParticipantsAnnualIncome(List<Participants> participantsList)
+        {
+            List<ResultsDTO> income = new List<ResultsDTO>();
+
+            
+            participantsList.ForEach(item =>
+            {
+                ResultsDTO resultDto = new ResultsDTO();
+                resultDto.value = item.net_monthly_salary * item.paymanets;
+                resultDto.participant = item;
+                income.Add(resultDto);
+            });
+
+            return income;
+        }
+
+        internal List<ResultsDTO> CalculateParticipantsMonthlyIncome(List<Participants> participantsList)
+        {
+            List<ResultsDTO> income = new List<ResultsDTO>();
+
+            participantsList.ForEach(item =>
+            {
+                ResultsDTO resultDto = new ResultsDTO();
+                resultDto.value = item.net_monthly_salary;
+                resultDto.participant = item;
+                income.Add(resultDto);
+            });
+
+            return income;
+        }
+
+        internal (List<ResultsDTO>, List<ResultsDTO>) CalculateEqualAnnualParticipation(decimal totalAnnualExpenses, List<Participants> participantsList)
+        {
+            List<ResultsDTO> contribution = new List<ResultsDTO>();
+            List<ResultsDTO> leftover = new List<ResultsDTO>();
+
+            totalAnnualExpenses = 27508.77m;
+
+            participantsList.ForEach(item =>
+            {
+                ResultsDTO resultDto = new ResultsDTO();
+                resultDto.value = (totalAnnualExpenses / participantsList.Count);
+                resultDto.participant = item;
+
+                contribution.Add(resultDto);
+
+                resultDto.value = (item.net_monthly_salary * item.paymanets) - (totalAnnualExpenses / participantsList.Count);
+
+                leftover.Add(resultDto);
+            });
+
+            return (contribution, leftover);
+        }
+
+        internal (List<ResultsDTO>, List<ResultsDTO>) CalculateEqualMonthlyParticipation(decimal totalAnnualExpenses, List<Participants> participantsList)
+        {
+            List<ResultsDTO> contribution = new List<ResultsDTO>();
+            List<ResultsDTO> leftover = new List<ResultsDTO>();
+
+            totalAnnualExpenses = 27508.77m;
+
+            participantsList.ForEach(item =>
+            {
+                ResultsDTO resultDto = new ResultsDTO();
+                resultDto.value = ((totalAnnualExpenses / 12) / participantsList.Count);
+                resultDto.participant = item;
+                contribution.Add(resultDto);
+
+                resultDto.value = (item.net_monthly_salary * item.paymanets) - (totalAnnualExpenses / participantsList.Count);
+                leftover.Add(resultDto);
+            });
+
+            return (contribution, leftover);
+        }
+
+        internal (List<ResultsDTO>, List<ResultsDTO>) CalculatePercentageAnnualParticipation(decimal totalAnnualExpenses, List<Participants> participantsList)
+        {
+            totalAnnualExpenses = 27508.77m;
+
+            List<ResultsDTO> contribution = new List<ResultsDTO>();
+            List<ResultsDTO> leftover = new List<ResultsDTO>();
+
+            var ingresosMensualPromedio = participantsList.Sum(x => x.net_monthly_salary * x.paymanets)/12;
+            var resultado = ((totalAnnualExpenses / 12) * 100) / ingresosMensualPromedio;
+
+            participantsList.ForEach((item) => 
+            {
+                var annualParticipation = ((resultado * (item.net_monthly_salary * item.paymanets)/12) / 100) * 12;
+
+                ResultsDTO resultDto = new ResultsDTO();
+                resultDto.value = annualParticipation;
+                resultDto.participant = item;
+
+                contribution.Add(resultDto);
+
+                resultDto.value = (item.net_monthly_salary * item.paymanets) - annualParticipation;
+                leftover.Add(resultDto);
+            });
+
+            return (contribution, leftover);
+        }
+
+        internal (List<ResultsDTO>, List<ResultsDTO>) CalculatePercentageMonthlyParticipation(decimal totalAnnualExpenses, List<Participants> participantsList)
+        {
+            List<ResultsDTO> contribution = new List<ResultsDTO>();
+            List<ResultsDTO> leftover = new List<ResultsDTO>();
+
+            totalAnnualExpenses = 27508.77m;
+
+            var ingresosMensualPromedio = participantsList.Sum(x => x.net_monthly_salary * x.paymanets) / 12;
+            var resultado = ((totalAnnualExpenses / 12) * 100) / ingresosMensualPromedio;
+
+            participantsList.ForEach((item) =>
+            {
+                var monthlyParticipation = ((resultado * (item.net_monthly_salary * item.paymanets) / 12) / 100);
+
+                ResultsDTO resultDto = new ResultsDTO();
+                resultDto.value = monthlyParticipation;
+                resultDto.participant = item;
+
+                contribution.Add(resultDto);
+
+                resultDto.value = (item.net_monthly_salary * item.paymanets) / 12 - monthlyParticipation;
+                leftover.Add(resultDto);
+            });
+
+            return (contribution, leftover);
         }
     }
 }

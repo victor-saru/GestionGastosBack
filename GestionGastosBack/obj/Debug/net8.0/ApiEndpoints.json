@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "GestionGastosBD.DTOs.CalculationsResultsDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
