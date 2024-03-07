@@ -1,4 +1,5 @@
 ﻿using GestionGastosBD;
+using GestionGastosBD.DTOs;
 using GestionGastosBD.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
@@ -20,7 +21,7 @@ namespace GestionGastosBack.Controllers
         }
 
         [HttpPost("LogIn")]
-        public async Task<ActionResult<string>> LogIn()
+        public async Task<ActionResult<UserDto>> LogIn()
         {
             try
             {
@@ -41,26 +42,30 @@ namespace GestionGastosBack.Controllers
                             if (user != null)
                             {
                                 if (password == user.password)
-                                    return "OK: Correct login";
+                                {
+                                     return new UserDto { error = new Errores { Code = "OK", Message = "Correct login" }, user = user };
+                                     
+                                }
+                                    
                                 else
-                                    return "ERROR: Incorrect password";
-                            }
+                                    return new UserDto { error = new Errores { Code = "ERROR", Message = "Incorrect password"}, user = null};
+                                }
 
                             else
-                                return "ERROR: User " + email + " does not exists";
+                                return new UserDto { error = new Errores { Code = "ERROR", Message = "User " + email + " does not exists" }, user = null };
                         }
 
                         else
-                            return "ERROR: Password is null or empty";
+                            return new UserDto { error = new Errores { Code = "ERROR", Message = "Password is null or empty" }, user = null };
                     }
 
                     else
-                        return "ERROR: User is null or empty";
+                        return new UserDto { error = new Errores { Code = "ERROR", Message = "User is null or empty" }, user = null };
                 }
             }
             catch (Exception ex)
             {
-                return ex.Message;
+                return new UserDto { error = new Errores { Code = "ERROR", Message = ex.Message }, user = null };
             }
             
         }

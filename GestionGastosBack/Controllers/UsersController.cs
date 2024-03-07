@@ -1,4 +1,5 @@
 ﻿using GestionGastosBD;
+using GestionGastosBD.DTOs;
 using GestionGastosBD.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
@@ -20,7 +21,7 @@ namespace GestionGastosBack.Controllers
         }
 
         [HttpPost("InsertUser")]
-        public async Task<ActionResult<string>> InsertUser()
+        public async Task<ActionResult<UserDto>> InsertUser()
         {
             try
             {
@@ -47,25 +48,25 @@ namespace GestionGastosBack.Controllers
                                 _context.Add(user);
                                 _context.SaveChanges();
 
-                                return "OK: User " + email + " successfully inserted";
+                                return new UserDto { error = new Errores { Code = "OK", Message = "User " + email + " successfully inserted" }, user = user };
                             }
 
                             else
-                                return "ERROR: User " + email + " already exists";
+                                return new UserDto { error = new Errores { Code = "ERROR", Message = "User " + email + " already exists" }, user = null };
                         }
 
                         else
-                            return "ERROR: Password is null or empty";
+                            return new UserDto { error = new Errores { Code = "ERROR", Message = "Password is null or empty" }, user = null };
                     }
 
                     else
-                        return "ERROR: User is null or empty";
-                    
+                        return new UserDto { error = new Errores { Code = "ERROR", Message = "User is null or empty" }, user = null };
+
                 }
             }
             catch (Exception ex)
             {
-                return ex.Message;
+                return new UserDto { error = new Errores { Code = "ERROR", Message = ex.Message }, user = null };
             }
         }
 

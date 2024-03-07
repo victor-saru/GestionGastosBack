@@ -1,4 +1,5 @@
 ﻿using GestionGastosBD;
+using GestionGastosBD.DTOs;
 using GestionGastosBD.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -190,17 +191,22 @@ namespace GestionGastosBack.Controllers
         }
 
         [HttpPost("GetExpenses")]
-        public async Task<ActionResult<IEnumerable<Expenses>>> GetExpenses()
+        public async Task<ActionResult<ExpensesDto>> GetExpenses()
         {
             using (StreamReader reader = new StreamReader(Request.Body, Encoding.UTF8))
             {
                 var body = await reader.ReadToEndAsync();
                 dynamic jObject = JObject.Parse(body);
-                int id_user = jObject.id_user;
+                int id_user = jObject.id;
 
-               return await _context.Expenses.Where(x => x.id_user == id_user)
+                var expensesList = _context.Expenses.Where(x => x.id_user == id_user)
                     .Include(e => e.PaymentMethods)
-                    .ToListAsync();
+                    .ToList();
+
+                if (expensesList.Count != 1)
+                    return new ExpensesDto { expenses = expensesList, error = new Errores { Code = "OK", Message = "Expenses found" }};
+                else
+                    return new ExpensesDto { expenses = null, error = new Errores { Code = "ERROR", Message = "Expenses not found" }};
             }
         }
     }
