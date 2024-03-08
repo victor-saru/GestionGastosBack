@@ -200,6 +200,26 @@
     ]
   },
   {
+    "ContainingType": "GestionGastosBack.Controllers.PaymentMethodsController",
+    "Method": "GetPaymentMethods",
+    "RelativePath": "api/PaymentMethods/GetPaymentMethods",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "GestionGastosBD.DTOs.PaymentmethodDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "GestionGastosBack.Controllers.UsersController",
     "Method": "DeleteUser",
     "RelativePath": "api/Users/DeleteUser",

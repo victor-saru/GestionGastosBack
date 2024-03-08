@@ -36,10 +36,19 @@ namespace GestionGastosBack.Controllers
 
                     string name = jObject.name.ToString();
                     decimal cost = jObject.cost == "" ? 0 : jObject.cost;
-                    string next_payment = jObject.next_payment == "" ? "" : jObject.next_payment.ToString("dd/MM/yyyy");
-                    DateTime? final_payment = jObject.final_payment == "" ? null : DateTime.Parse(jObject.final_payment.ToString("dd/MM/yyyy"));
-                    string id_periodicity = jObject.id_periodicity.ToString();
-                    int id_user = jObject.id_user == "" ? -1 : jObject.id_user;
+                    //string next_payment = jObject.next_payment == "" ? "" : jObject.next_payment.ToString("dd/MM/yyyy");
+                    DateTime next_paymentDateTime = jObject.next_payment;
+                    string next_payment = next_paymentDateTime.ToString("dd/MM/yyyy");
+
+                    //DateTime? final_payment = jObject.final_payment == "" ? null : DateTime.Parse(jObject.final_payment.ToString("dd/MM/yyyy"));
+
+                    DateTime? final_paymentDateTime = jObject.next_payment;
+                    string final_payment = next_paymentDateTime.ToString("dd/MM/yyyy");
+                    //DateTime? final_payment = jObject.final_payment;
+
+                    
+                    string id_periodicity = JsonConvert.DeserializeObject<PaymentMethods>(jObject.id_periodicity.ToString()).name;
+                    int id_user = jObject.id_user;
 
                     if (!string.IsNullOrEmpty(name))
                     {
@@ -56,7 +65,7 @@ namespace GestionGastosBack.Controllers
                                             name = name,
                                             cost = cost,
                                             next_payment = DateTime.Parse(next_payment),
-                                            final_payment = final_payment,
+                                            final_payment = DateTime.Parse(final_payment),
                                             id_periodicity = id_periodicity,
                                             id_user = id_user
                                         };
