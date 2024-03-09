@@ -25,7 +25,7 @@ namespace GestionGastosBack.Controllers
         }
 
         [HttpPost("InsertExpense")]
-        public async Task<ActionResult<string>> InsertExpense()
+        public async Task<ActionResult<Errores>> InsertExpense()
         {
             try
             {
@@ -42,8 +42,8 @@ namespace GestionGastosBack.Controllers
 
                     //DateTime? final_payment = jObject.final_payment == "" ? null : DateTime.Parse(jObject.final_payment.ToString("dd/MM/yyyy"));
 
-                    DateTime? final_paymentDateTime = jObject.next_payment;
-                    string final_payment = next_paymentDateTime.ToString("dd/MM/yyyy");
+                    var final_paymentDateTime = jObject.final_payment;
+                    var final_payment = final_paymentDateTime != "" ? final_paymentDateTime.ToString("dd/MM/yyyy") : null;
                     //DateTime? final_payment = jObject.final_payment;
 
                     
@@ -65,7 +65,7 @@ namespace GestionGastosBack.Controllers
                                             name = name,
                                             cost = cost,
                                             next_payment = DateTime.Parse(next_payment),
-                                            final_payment = DateTime.Parse(final_payment),
+                                            final_payment = final_payment != null ? DateTime.Parse(final_payment) : null,
                                             id_periodicity = id_periodicity,
                                             id_user = id_user
                                         };
@@ -73,27 +73,27 @@ namespace GestionGastosBack.Controllers
                                         _context.Add(expenses);
                                         _context.SaveChanges();
 
-                                        return "OK: Expense " + name + " successfully inserted.";
+                                        return new Errores { Code = "OK", Message = "Expense " + name + " successfully inserted." } ;
                                     }
 
-                                    else return "ERROR: User is null or empty";
+                                    else return new Errores { Code = "ERROR", Message = "User is null or empty"};
                                 }
 
-                                else return "ERROR: Perioficity is null or empty";
-                            }
-
-                            else return "ERROR: Next Payment is null or empty";
+                                else return new Errores { Code = "ERROR", Message = "Perioficity is null or empty" };
                         }
 
-                        else return "ERROR: Cost is 0";
-                    }
-
-                    else return "ERROR: Name is null or empty";
+                            else return new Errores { Code = "ERROR", Message = "Next Payment is null or empty" };
                 }
+
+                        else return new Errores { Code = "ERROR", Message = "Cost is 0" } ;
+        }
+
+                    else return new Errores { Code = "ERROR", Message = "Name is null or empty" };
+}
             }
             catch (Exception ex)
             {
-                return ex.Message;
+                return new Errores { Code = "ERROR", Message = ex.Message };
             }
         }
 
@@ -212,7 +212,7 @@ namespace GestionGastosBack.Controllers
                     .Include(e => e.PaymentMethods)
                     .ToList();
 
-                if (expensesList.Count != 1)
+                if (expensesList.Count != 0)
                     return new ExpensesDto { expenses = expensesList, error = new Errores { Code = "OK", Message = "Expenses found" }};
                 else
                     return new ExpensesDto { expenses = null, error = new Errores { Code = "ERROR", Message = "Expenses not found" }};

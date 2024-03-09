@@ -16,11 +16,11 @@
       "AbsoluteMoniker": "D:0:0:{7BC94691-BE34-4FE8-8360-4EB5B382D61A}|..\\GestionGastosBD\\GestionGastosBD.csproj|c:\\users\\victo\\repository\\gestiongastosback\\gestiongastosbd\\dtos\\paymentmethoddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBack\\Controllers\\PaymentMethodsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Controllers\\PaymentMethodsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BC94691-BE34-4FE8-8360-4EB5B382D61A}|..\\GestionGastosBD\\GestionGastosBD.csproj|c:\\users\\victo\\repository\\gestiongastosback\\gestiongastosbd\\dtos\\expensesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BC94691-BE34-4FE8-8360-4EB5B382D61A}|..\\GestionGastosBD\\GestionGastosBD.csproj|c:\\users\\victo\\repository\\gestiongastosback\\gestiongastosbd\\dtos\\expensesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F045BF40-A0A0-4368-B568-6E08CB017E70}|GestionGastosBack.csproj|c:\\users\\victo\\repository\\gestiongastosback\\gestiongastosback\\controllers\\paymentmethodscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F045BF40-A0A0-4368-B568-6E08CB017E70}|GestionGastosBack.csproj|solutionrelative:controllers\\paymentmethodscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -55,12 +55,11 @@
               "RelativeToolTip": "..\\GestionGastosBD\\DTOs\\PaymentmethodDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T15:33:55.893Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T15:33:55.893Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PaymentMethodsController.cs",
               "DocumentMoniker": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBack\\Controllers\\PaymentMethodsController.cs",
               "RelativeDocumentMoniker": "Controllers\\PaymentMethodsController.cs",
@@ -68,12 +67,11 @@
               "RelativeToolTip": "Controllers\\PaymentMethodsController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T13:52:59.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T13:52:59.913Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "ExpensesDto.cs",
               "DocumentMoniker": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBD\\DTOs\\ExpensesDto.cs",
               "RelativeDocumentMoniker": "..\\GestionGastosBD\\DTOs\\ExpensesDto.cs",
@@ -93,8 +91,7 @@
               "RelativeToolTip": "..\\GestionGastosBD\\Models\\Expenses.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T18:19:37.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-07T18:19:37.901Z"
             }
           ]
         },
@@ -110,7 +107,7 @@
               "RelativeDocumentMoniker": "Controllers\\ExpensesController.cs",
               "ToolTip": "C:\\Users\\victo\\Repository\\GestionGastosBack\\GestionGastosBack\\Controllers\\ExpensesController.cs",
               "RelativeToolTip": "Controllers\\ExpensesController.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAWwD4AAAA2AAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAtwM8AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-07T18:24:58.58Z",
               "EditorCaption": ""

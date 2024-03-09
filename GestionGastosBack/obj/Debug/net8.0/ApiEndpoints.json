@@ -69,7 +69,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.String",
+        "Type": "GestionGastosBD.Models.Errores",
         "MediaTypes": [
           "text/plain",
           "application/json",
